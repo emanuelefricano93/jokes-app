@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!-- you need to add the Thymeleaf namespace in order to use it like th:text in the html -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Jokes</title>
+</head>
+<body>
+<h1>Chuck Norris Joke!!</h1>
+<!-- remeber put always inside the resource/templates all your views for Thymeleaf-->
+<!-- here we will replace what we have inside the p coming from the Model using th:text="${model_name}"-->
+<p th:text="${joke}">Insert Joke here!!!</p>
+</body>
+</html>
