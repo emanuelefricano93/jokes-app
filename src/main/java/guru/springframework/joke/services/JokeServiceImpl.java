@@ -9,8 +9,8 @@ public class JokeServiceImpl implements JokeService {
     // you are using a final variable so spring will create and and it is more efficient so this variable is created only once
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public JokeServiceImpl() {
-        chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public JokeServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     @Override
